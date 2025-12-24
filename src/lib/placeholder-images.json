@@ -1,3 +1,58 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "Friendly female dentist smiling in a modern, clean clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkZW50aXN0JTIwY2xpbmljfGVufDB8fHx8MTc2NjYxOTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist clinic"
+    },
+    {
+      "id": "dentist-photo",
+      "description": "Portrait of Dr. Ahmed, a professional and friendly male dentist.",
+      "imageUrl": "https://images.unsplash.com/photo-1670191247079-f9713ae06dcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkZW50aXN0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY2NjA3ODMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dentist portrait"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Photo of a smiling female patient.",
+      "imageUrl": "https://images.unsplash.com/photo-1535295972055-1c762f4483e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzbWlsaW5nJTIwcGVyc29ufGVufDB8fHx8MTc2NjUzMTM3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling person"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Photo of a smiling male patient.",
+      "imageUrl": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYXBweSUyMHBlcnNvbnxlbnwwfHx8fDE3NjY1NzIxNjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy person"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Photo of a happy family.",
+      "imageUrl": "https://images.unsplash.com/photo-1556566353-cdcb88a69f3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzbWlsaW5nJTIwZmFtaWx5fGVufDB8fHx8MTc2NjYxOTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling family"
+    },
+    {
+      "id": "before-1",
+      "description": "Teeth before whitening procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1660732205502-2c4dcd3af74d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx5ZWxsb3dlZCUyMHRlZXRofGVufDB8fHx8MTc2NjYxOTkyMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "yellowed teeth"
+    },
+    {
+      "id": "after-1",
+      "description": "Teeth after whitening procedure.",
+      "imageUrl": "https://images.unsplash.com/photo-1656797050133-9376c800723e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3aGl0ZSUyMHRlZXRofGVufDB8fHx8MTc2NjYxOTkyM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white teeth"
+    },
+    {
+      "id": "why-choose-us",
+      "description": "A modern and sterile dental treatment room.",
+      "imageUrl": "https://images.unsplash.com/photo-1643660527070-03ed14b41677?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkZW50YWwlMjBjaGFpcnxlbnwwfHx8fDE3NjY2MDc4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dental chair"
+    },
+    {
+      "id": "map-location",
+      "description": "A map showing the location of the dental clinic.",
+      "imageUrl": "https://images.unsplash.com/photo-1619468129361-605ebea04b44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2NjUzNTQ0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    }
+  ]
 }
