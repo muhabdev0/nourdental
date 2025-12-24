@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Hero() {
@@ -42,12 +42,6 @@ export function Hero() {
                   <Link href="tel:+1234567890">
                     <Phone className="ml-2 h-5 w-5" />
                     اتصل بنا
-                  </Link>
-                </Button>
-                <Button variant="secondary" size="lg" asChild className="text-lg bg-green-500 text-white hover:bg-green-600">
-                   <Link href="https://wa.me/1234567890" target="_blank">
-                    <MessageCircle className="ml-2 h-5 w-5" />
-                    واتساب
                   </Link>
                 </Button>
               </div>
