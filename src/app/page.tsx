@@ -11,6 +11,8 @@ import { Contact } from '@/components/sections/contact';
 import { FinalCta } from '@/components/sections/final-cta';
 import { SiteFooter } from '@/components/site/site-footer';
 import { FloatingButtons } from '@/components/site/floating-buttons';
+import { VirtualTour } from '@/components/sections/virtual-tour';
+import { Faq } from '@/components/sections/faq';
 
 export default function Home() {
   return (
@@ -21,10 +23,12 @@ export default function Home() {
         <TrustSignals />
         <Services />
         <WhyChooseUs />
+        <VirtualTour />
         <About />
         <Testimonials />
         <BeforeAfter />
         <Booking />
+        <Faq />
         <Contact />
         <FinalCta />
       </main>
