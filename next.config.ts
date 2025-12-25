@@ -70,6 +70,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.wipa.org.au',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
