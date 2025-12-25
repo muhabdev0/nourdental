@@ -15,6 +15,9 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   title: 'Nour Dental | ابتسامتك الصحية تبدأ من هنا',
   description: 'رعاية أسنان احترافية لجميع أفراد العائلة باستخدام أحدث التقنيات وبدون ألم.',
+  icons: {
+    icon: 'https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3',
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +27,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl">
-      <head>
-        <link rel="icon" href="https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3" />
-      </head>
       <body className={cn('font-body antialiased', cairo.variable)}>
         {children}
         <Toaster />
