@@ -26,9 +26,6 @@ const Contact = dynamic(() => import('@/components/sections/contact').then(mod =
 const FinalCta = dynamic(() => import('@/components/sections/final-cta').then(mod => mod.FinalCta), {
   loading: () => <Skeleton className="h-48 w-full" />,
 });
-const VirtualTour = dynamic(() => import('@/components/sections/virtual-tour').then(mod => mod.VirtualTour), {
-  loading: () => <Skeleton className="h-96 w-full" />,
-});
 const Faq = dynamic(() => import('@/components/sections/faq').then(mod => mod.Faq), {
   loading: () => <Skeleton className="h-96 w-full" />,
 });
@@ -43,7 +40,6 @@ export default function Home() {
         <TrustSignals />
         <Services />
         <WhyChooseUs />
-        <VirtualTour />
         <About />
         <Testimonials />
         <BeforeAfter />
