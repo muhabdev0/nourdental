@@ -7,7 +7,6 @@ This is a modern, responsive, and performant website for a dental clinic called 
 - **Framework**: [Next.js](https://nextjs.org/) (with App Router)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **UI Components**: [ShadCN UI](https://ui.shadcn.com/)
-- **AI/Generative**: [Google Genkit](https://firebase.google.com/docs/genkit)
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 
 ## Getting Started
