@@ -62,7 +62,7 @@ export function Faq() {
       <div className="container mx-auto px-4">
         <Card className="max-w-3xl mx-auto shadow-lg">
           <CardHeader className="text-center">
-            <CardTitle className="text-4xl md:text-5xl font-headline font-bold text-primary">
+            <CardTitle className="text-4xl md:text-5xl font-headline font-bold text-primary mb-4">
               اسألنا أي شيء
             </CardTitle>
             <CardDescription className="text-lg mt-8">
