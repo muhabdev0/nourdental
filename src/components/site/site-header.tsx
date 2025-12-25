@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -13,13 +14,6 @@ const navLinks = [
   { href: "#testimonials", label: "آراء المرضى" },
   { href: "#contact", label: "تواصل معنا" },
 ];
-
-const ToothIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
-        <path d="M17.8 8.4c0-3-2.3-5.4-5.3-5.4S7.2 5.3 7.2 8.4c0 2 1.1 3.8 2.8 4.8.1.1.2.2.2.3v3.1c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6v-3.1c0-.1.1-.2.2-.3 1.7-1 2.8-2.8 2.8-4.8zm-5.3-3.9c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5S9 10.1 9 8.2s1.6-3.7 3.5-3.7zM20 18H4v-2h16v2z"/>
-    </svg>
-);
-
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -45,9 +39,9 @@ export function SiteHeader() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="text-primary">
-          <ToothIcon className="h-8 w-8" />
-          <span className="sr-only">Nour Dental</span>
+        <Link href="/" className="flex items-center gap-2 text-primary">
+          <Image src="https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nour Dental Logo" width={40} height={40} className="rounded-full" />
+          <span className="text-xl font-bold font-headline text-foreground">Nour Dental</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
@@ -76,9 +70,9 @@ export function SiteHeader() {
             <SheetContent side="right" className="w-full max-w-sm bg-background">
               <div className="flex flex-col h-full p-6">
                  <div className="flex justify-between items-center mb-8">
-                    <Link href="/" onClick={handleLinkClick} className="text-primary">
-                        <ToothIcon className="h-8 w-8" />
-                        <span className="sr-only">Nour Dental</span>
+                    <Link href="/" onClick={handleLinkClick} className="flex items-center gap-2 text-primary">
+                        <Image src="https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nour Dental Logo" width={40} height={40} className="rounded-full" />
+                        <span className="text-xl font-bold font-headline text-foreground">Nour Dental</span>
                     </Link>
                     <SheetTrigger asChild>
                         <Button variant="ghost" size="icon">

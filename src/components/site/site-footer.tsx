@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, Clock, Facebook, Instagram, Twitter } from "lucide-react";
-
-const ToothIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" {...props}>
-        <path d="M17.8 8.4c0-3-2.3-5.4-5.3-5.4S7.2 5.3 7.2 8.4c0 2 1.1 3.8 2.8 4.8.1.1.2.2.2.3v3.1c0 .3.3.6.6.6h2.8c.3 0 .6-.3.6-.6v-3.1c0-.1.1-.2.2-.3 1.7-1 2.8-2.8 2.8-4.8zm-5.3-3.9c1.9 0 3.5 1.6 3.5 3.5s-1.6 3.5-3.5 3.5S9 10.1 9 8.2s1.6-3.7 3.5-3.7zM20 18H4v-2h16v2z"/>
-    </svg>
-);
+import Image from "next/image";
 
 export function SiteFooter() {
   const navLinks = [
@@ -27,7 +22,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4 text-primary">
-              <ToothIcon className="h-8 w-8" />
+              <Image src="https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Nour Dental Logo" width={40} height={40} className="rounded-full" />
               <h3 className="text-2xl font-bold font-headline">
                 Nour Dental
               </h3>
