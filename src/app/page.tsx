@@ -1,18 +1,38 @@
+import dynamic from 'next/dynamic';
 import { SiteHeader } from '@/components/site/site-header';
 import { Hero } from '@/components/sections/hero';
 import { TrustSignals } from '@/components/sections/trust-signals';
 import { Services } from '@/components/sections/services';
 import { WhyChooseUs } from '@/components/sections/why-choose-us';
-import { About } from '@/components/sections/about';
-import { Testimonials } from '@/components/sections/testimonials';
-import { BeforeAfter } from '@/components/sections/before-after';
-import { Booking } from '@/components/sections/booking';
-import { Contact } from '@/components/sections/contact';
-import { FinalCta } from '@/components/sections/final-cta';
+import { Skeleton } from '@/components/ui/skeleton';
 import { SiteFooter } from '@/components/site/site-footer';
 import { FloatingButtons } from '@/components/site/floating-buttons';
-import { VirtualTour } from '@/components/sections/virtual-tour';
-import { Faq } from '@/components/sections/faq';
+
+const About = dynamic(() => import('@/components/sections/about').then(mod => mod.About), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const Testimonials = dynamic(() => import('@/components/sections/testimonials').then(mod => mod.Testimonials), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const BeforeAfter = dynamic(() => import('@/components/sections/before-after').then(mod => mod.BeforeAfter), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const Booking = dynamic(() => import('@/components/sections/booking').then(mod => mod.Booking), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const Contact = dynamic(() => import('@/components/sections/contact').then(mod => mod.Contact), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const FinalCta = dynamic(() => import('@/components/sections/final-cta').then(mod => mod.FinalCta), {
+  loading: () => <Skeleton className="h-48 w-full" />,
+});
+const VirtualTour = dynamic(() => import('@/components/sections/virtual-tour').then(mod => mod.VirtualTour), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const Faq = dynamic(() => import('@/components/sections/faq').then(mod => mod.Faq), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+
 
 export default function Home() {
   return (

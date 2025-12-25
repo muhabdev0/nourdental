@@ -17,8 +17,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['"Cairo"', 'sans-serif'],
-        headline: ['"Cairo"', 'serif'],
+        body: ['var(--font-cairo)', 'sans-serif'],
+        headline: ['var(--font-cairo)', 'serif'],
         code: ['monospace'],
       },
       colors: {

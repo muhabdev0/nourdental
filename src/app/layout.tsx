@@ -1,6 +1,16 @@
 import type { Metadata } from 'next';
 import { Toaster } from "@/components/ui/toaster"
+import { Cairo } from 'next/font/google';
+import { cn } from '@/lib/utils';
 import './globals.css';
+
+const cairo = Cairo({
+  subsets: ['arabic'],
+  weight: ['400', '700', '900'],
+  display: 'swap',
+  variable: '--font-cairo',
+});
+
 
 export const metadata: Metadata = {
   title: 'Nour Dental | ابتسامتك الصحية تبدأ من هنا',
@@ -16,11 +26,8 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <head>
         <link rel="icon" href="https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
+      <body className={cn('font-body antialiased', cairo.variable)}>
         {children}
         <Toaster />
       </body>
