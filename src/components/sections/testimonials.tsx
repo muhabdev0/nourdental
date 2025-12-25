@@ -34,7 +34,7 @@ const testimonials = [
 
 export function Testimonials() {
   const plugin = React.useRef(
-    Autoplay({ delay: 1000, stopOnInteraction: true })
+    Autoplay({ delay: 1000, stopOnInteraction: false })
   )
 
   return (
@@ -56,8 +56,6 @@ export function Testimonials() {
             direction: "rtl",
           }}
           className="w-full"
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {testimonials.map((testimonial) => (
