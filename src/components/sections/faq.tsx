@@ -65,7 +65,7 @@ export function Faq() {
             <CardTitle className="text-4xl md:text-5xl font-headline font-bold text-primary">
               اسألنا أي شيء
             </CardTitle>
-            <CardDescription className="text-lg mt-2">
+            <CardDescription className="text-lg mt-4">
               لديك سؤال؟ مساعدنا الذكي جاهز للإجابة على استفساراتك فورًا.
             </CardDescription>
           </CardHeader>
