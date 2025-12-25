@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Stethoscope, Sparkles, Syringe, Braces, Baby, Anchor, Siren, Wind } from "lucide-react";
+import { Stethoscope, Sparkles, Syringe, Ruler, Baby, Anchor, Siren, Wind } from "lucide-react";
 
 const services = [
   {
@@ -23,7 +23,7 @@ const services = [
     description: "علاج دقيق لإنقاذ أسنانك المصابة وتخليصك من الألم نهائيًا.",
   },
   {
-    icon: Braces,
+    icon: Ruler,
     title: "تقويم الأسنان",
     description: "ترتيب الأسنان وتحسين مظهرها ووظيفتها باستخدام أحدث طرق التقويم.",
   },
