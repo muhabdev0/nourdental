@@ -11,7 +11,6 @@ import { Contact } from '@/components/sections/contact';
 import { Faq } from '@/components/sections/faq';
 import { FinalCta } from '@/components/sections/final-cta';
 import { SiteFooter } from '@/components/site/site-footer';
-import { FloatingButtons } from '@/components/site/floating-buttons';
 
 export default function Home() {
   return (
@@ -30,7 +29,6 @@ export default function Home() {
         <Contact />
         <FinalCta />
       </main>
-      <FloatingButtons />
       <SiteFooter />
     </div>
   );
