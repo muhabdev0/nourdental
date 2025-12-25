@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -9,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import React from "react";
 import Autoplay from "embla-carousel-autoplay"
 
@@ -62,9 +60,7 @@ export function Testimonials() {
           onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
-            {testimonials.map((testimonial) => {
-              const image = PlaceHolderImages.find(img => img.id === testimonial.id);
-              return (
+            {testimonials.map((testimonial) => (
                 <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-1">
                     <Card className="h-full flex flex-col shadow-lg">
@@ -80,16 +76,6 @@ export function Testimonials() {
                           </blockquote>
                         </div>
                         <div className="flex items-center mt-6">
-                           {image && (
-                            <Image
-                              src={image.imageUrl}
-                              alt={`Photo of ${testimonial.name}`}
-                              width={50}
-                              height={50}
-                              className="rounded-full mr-4"
-                              data-ai-hint={image.imageHint}
-                            />
-                           )}
                           <div>
                             <p className="font-semibold text-foreground">{testimonial.name}</p>
                           </div>
@@ -98,8 +84,7 @@ export function Testimonials() {
                     </Card>
                   </div>
                 </CarouselItem>
-              );
-            })}
+              ))}
           </CarouselContent>
           <CarouselPrevious className="right-12 -top-4 md:-top-8" />
           <CarouselNext className="right-0 -top-4 md:-top-8" />
