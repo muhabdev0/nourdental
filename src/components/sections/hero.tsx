@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Phone } from "lucide-react";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export function Hero() {
@@ -37,14 +36,6 @@ export function Hero() {
                   احجز موعدك الآن
                 </Link>
               </Button>
-              <div className="flex gap-4">
-                <Button variant="secondary" size="lg" asChild className="text-lg">
-                  <Link href="tel:+1234567890">
-                    <Phone className="ml-2 h-5 w-5" />
-                    اتصل بنا
-                  </Link>
-                </Button>
-              </div>
             </div>
           </div>
         </div>
