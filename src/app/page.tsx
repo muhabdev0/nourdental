@@ -8,9 +8,9 @@ import { Testimonials } from '@/components/sections/testimonials';
 import { BeforeAfter } from '@/components/sections/before-after';
 import { Booking } from '@/components/sections/booking';
 import { Contact } from '@/components/sections/contact';
-import { Faq } from '@/components/sections/faq';
 import { FinalCta } from '@/components/sections/final-cta';
 import { SiteFooter } from '@/components/site/site-footer';
+import { FloatingButtons } from '@/components/site/floating-buttons';
 
 export default function Home() {
   return (
@@ -25,10 +25,10 @@ export default function Home() {
         <Testimonials />
         <BeforeAfter />
         <Booking />
-        <Faq />
         <Contact />
         <FinalCta />
       </main>
+      <FloatingButtons />
       <SiteFooter />
     </div>
   );
