@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { Star } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,6 +10,8 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import React from "react";
+import Autoplay from "embla-carousel-autoplay"
 
 const testimonials = [
   {
@@ -32,6 +35,10 @@ const testimonials = [
 ];
 
 export function Testimonials() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true })
+  )
+
   return (
     <section id="testimonials" className="bg-background py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -44,12 +51,15 @@ export function Testimonials() {
           </p>
         </div>
         <Carousel
+          plugins={[plugin.current]}
           opts={{
             align: "start",
             loop: true,
             direction: "rtl",
           }}
           className="w-full"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
         >
           <CarouselContent>
             {testimonials.map((testimonial) => {
