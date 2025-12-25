@@ -1,44 +1,44 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { GeneralDentistry, TeethCleaning, TeethWhitening, RootCanal, Orthodontics, PediatricDentistry, DentalImplants, Emergency } from "@/components/service-icons";
+import { Stethoscope, Sparkles, Syringe, Braces, Baby, Anchor, Siren, Wind } from "lucide-react";
 
 const services = [
   {
-    icon: GeneralDentistry,
+    icon: Stethoscope,
     title: "طب الأسنان العام",
     description: "رعاية أساسية وعلاجات للحفاظ على صحة أسنانك ولثتك.",
   },
   {
-    icon: TeethCleaning,
+    icon: Wind,
     title: "تنظيف الأسنان",
     description: "إزالة الجير والبلاك باحترافية لتحصل على أسنان نظيفة ونفس منعش.",
   },
   {
-    icon: TeethWhitening,
+    icon: Sparkles,
     title: "تبييض الأسنان",
     description: "احصل على ابتسامة أكثر بياضًا وإشراقًا بجلسة آمنة وفعالة.",
   },
   {
-    icon: RootCanal,
+    icon: Syringe,
     title: "علاج العصب",
     description: "علاج دقيق لإنقاذ أسنانك المصابة وتخليصك من الألم نهائيًا.",
   },
   {
-    icon: Orthodontics,
+    icon: Braces,
     title: "تقويم الأسنان",
     description: "ترتيب الأسنان وتحسين مظهرها ووظيفتها باستخدام أحدث طرق التقويم.",
   },
   {
-    icon: PediatricDentistry,
+    icon: Baby,
     title: "طب أسنان الأطفال",
     description: "رعاية متخصصة ولطيفة لأسنان أطفالك في بيئة مريحة ومحببة.",
   },
   {
-    icon: DentalImplants,
+    icon: Anchor,
     title: "زراعة الأسنان",
     description: "تعويض الأسنان المفقودة بحلول دائمة تشبه الأسنان الطبيعية.",
   },
   {
-    icon: Emergency,
+    icon: Siren,
     title: "حالات الطوارئ",
     description: "نحن هنا لمساعدتك في حالات ألم الأسنان أو الإصابات الطارئة.",
   },
