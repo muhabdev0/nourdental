@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: 'Nour Dental | ابتسامتك الصحية تبدأ من هنا',
   description: 'رعاية أسنان احترافية لجميع أفراد العائلة باستخدام أحدث التقنيات وبدون ألم.',
   icons: {
-    icon: 'https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3',
+    icon: 'https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3&v=2',
   },
 };
 
