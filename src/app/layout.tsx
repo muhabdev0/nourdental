@@ -15,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
+        <link rel="icon" href="https://tse3.mm.bing.net/th/id/OIP.TD80T-ssqDQsG-ZP2rNhwgHaG8?rs=1&pid=ImgDetMain&o=7&rm=3" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet" />
