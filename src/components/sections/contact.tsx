@@ -73,7 +73,7 @@ export function Contact() {
 
           <div className="rounded-2xl overflow-hidden shadow-2xl aspect-video relative">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232060.7744319459!2d46.56839556249999!3d24.724151800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              src="https://maps.google.com/maps?q=21.583605,39.197709&hl=es;z=14&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -84,7 +84,7 @@ export function Contact() {
             ></iframe>
             <div className="absolute bottom-4 right-4">
               <Button size="sm" asChild>
-                  <a href="https://www.google.com/maps/search/?api=1&query=Riyadh%2C+Saudi+Arabia" target="_blank" rel="noopener noreferrer">
+                  <a href="https://maps.google.com/?q=21.583605,39.197709" target="_blank" rel="noopener noreferrer">
                       افتح في خرائط جوجل
                   </a>
               </Button>
